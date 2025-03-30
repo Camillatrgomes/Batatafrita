@@ -24,8 +24,14 @@
         <li>Água</li>
         <li>Óleo</li>
         <li>Sal</li>
-        <!-- Você pode adicionar outros ingredientes se necessário -->
       </ul>
+    </section>
+
+    <section class="video">
+      <h2>Video Tutorial</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ?si=qGL-R2gVa8bggle1" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
     <section class="steps">
@@ -40,12 +46,39 @@
         <li>Retirar as batatas e polvilhar sal.</li>
       </ol>
     </section>
+
+    <section class="quiz">
+      <h2>Quiz</h2>
+      <form id="quiz-form">
+        <div class="question">
+          <p>1. Qual a melhor batata para fazer batata frita?</p>
+          <label><input type="radio" name="q1" value="asterix"> Asterix</label><br>
+          <label><input type="radio" name="q1" value="inglesa"> Inglesa</label><br>
+          <label><input type="radio" name="q1" value="batata-doce"> Batata doce</label>
+        </div>
+        <div class="question">
+          <p>2. Qual a temperatura do óleo?</p>
+          <label><input type="radio" name="q2" value="200"> 200</label><br>
+          <label><input type="radio" name="q2" value="180"> 180</label><br>
+          <label><input type="radio" name="q2" value="240"> 240</label>
+        </div>
+        <div class="question">
+          <p>3. Colocamos a batata na água quente antes de fritar?</p>
+          <label><input type="radio" name="q3" value="verdadeiro"> VERDADEIRO</label><br>
+          <label><input type="radio" name="q3" value="falso"> FALSO</label>
+        </div>
+        <button type="submit">Enviar respostas</button>
+      </form>
+      <div id="quiz-result"></div>
+    </section>
   </main>
   
   <footer>
     <p>&copy; 2025 Curso SENAI</p>
   </footer>
   
+  <!-- Scripts -->
   <script src="/assets/scripts/script.js"></script>
+  <script src="/assets/scripts/quiz.js"></script>
 </body>
 </html>

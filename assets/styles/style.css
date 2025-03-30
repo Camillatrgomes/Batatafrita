@@ -5,7 +5,6 @@
     box-sizing: border-box;
   }
   
-  /* Estilo geral do corpo */
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -14,7 +13,6 @@
     padding: 20px;
   }
   
-  /* Cabeçalho e rodapé */
   header, footer {
     text-align: center;
     padding: 15px 0;
@@ -27,7 +25,6 @@
     border-bottom: none;
   }
   
-  /* Conteúdo principal */
   main {
     max-width: 800px;
     margin: 20px auto;
@@ -37,23 +34,57 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
-  /* Cabeçalhos */
   h1, h2 {
     margin-bottom: 1rem;
     font-weight: bold;
   }
   
-  /* Seções de conteúdo */
-  .introduction, .ingredients, .steps {
+  .introduction, .ingredients, .steps, .video, .quiz {
     margin-bottom: 20px;
   }
   
-  /* Listas */
   ul, ol {
     margin-left: 20px;
   }
   
-  /* Responsividade: ajustes para telas menores */
+  /* Estilo para o iframe do vídeo */
+  .video iframe {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    border: none;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Estilo para a seção de quiz */
+  .quiz {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+  }
+  
+  .quiz h2 {
+    margin-bottom: 15px;
+  }
+  
+  .quiz .question {
+    margin-bottom: 15px;
+  }
+  
+  .quiz button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .quiz button:hover {
+    background-color: #555;
+  }
+  
   @media (max-width: 600px) {
     body {
       padding: 10px;
