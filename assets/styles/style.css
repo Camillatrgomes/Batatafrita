@@ -1,0 +1,66 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo geral do corpo */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Cabeçalho e rodapé */
+  header, footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  footer {
+    border-top: 1px solid #ddd;
+    border-bottom: none;
+  }
+  
+  /* Conteúdo principal */
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Cabeçalhos */
+  h1, h2 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Seções de conteúdo */
+  .introduction, .ingredients, .steps {
+    margin-bottom: 20px;
+  }
+  
+  /* Listas */
+  ul, ol {
+    margin-left: 20px;
+  }
+  
+  /* Responsividade: ajustes para telas menores */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+    
+    main {
+      padding: 15px;
+    }
+  }
+  
